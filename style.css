@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* margin: 0px; */
+    /* padding: 0px; */
+    box-sizing: border-box;
+    font-family: 'Protest Strike', sans-serif;
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    /* margin: 20px; */
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    padding-right: 30px;
+    background-color: #0025ff;
+}
+nav:hover{
+    background: linear-gradient(90deg,#0020c1, #01156f, #00051c ) ;
+}
+.nav-left{
+    justify-content: space-between;
+    display: flex;
+    margin: 20px;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+}
+.logo{
+    height: 70px;
+}
+.logo:hover{
+    height: 70px;
+    animation: scale 1.5s infinite;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #008cff;
+}
+@keyframes scale{
+    0%{
+        transform: scale(0.9);
+    }
+    25%{
+    transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+        color: #0020c1;
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+.logo > img{
+    height: 100%;
+}
+.nav-left >p{
+    font-size: 18px;
+    text-shadow: 4px 3px 2px #070055;
+    transition: all 0.2s ease-in-out;
+}
+.nav-left >p:hover{
+    text-shadow: 4px 3px 2px #070055;
+    transform: translateY(0.2rem);
+}
+.nav-left > p > i{
+    font-size: 15px;
+}
+.nav-btn{
+    width: 250px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #0025ff;
+    color: white;
+    font-size: 18px;
+    border: solid white 3px;
+    border-radius: 20px;
+    height: 35px;
+    transition: all 0.4s ease-in-out;
+}
+.nav-btn:hover{
+    color: #ffffff;
+    background-color: white;
+    border: solid #00d5ff;
+    text-shadow: 0 0 20px #00fbff;
+    background: linear-gradient(90deg,#0020c1, #01156f, #00051c ) ;
+    transform: translate(-2rem);
+    box-shadow: 0 0 20px #5cf8e9;
+}
+.video1{
+    width: 100%;
+}
+video{
+    width: 100%;
+}
+.cherry{
+    background-image: url(https://www.pepsi.com/en-us/refresh082123/images/wild-cherry/3296846-wild-cherry-2024-digital-rd-3-1920-x-1080@2x.png);
+    background-size: cover;
+    height: 163.333vh;
+    margin: 0px;
+    display: flex;
+}
+.shop-now{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    transition: all 0.6s ease-in-out;
+    height: 90px;
+    margin: 30px auto;
+    align-self: flex-end;
+}
+.shop-now:hover{
+    box-shadow: 0 0 30px #00bfff;
+    /* border: #1b02fc solid 5px; */
+    color: #fcfcfc;
+    background: linear-gradient(90deg,#0020c1, #01156f, #00051c ) ;
+    border-radius: 3px;
+    text-shadow: 0 0 30px #00fbff;
+    transform: translateY(-2rem);
+}
+.wildcherry{
+    background-image: url(https://www.pepsi.com/en-us/refresh082123/images/wild-cherry/wc-tvc-bg-tablet-vert@2x.png);
+    height: 150.33vh;
+    background-size: cover;
+    /* display: flex; */
+    cursor: pointer;
+    justify-content: center;
+    
+}
+.wildcherry >h1{
+    font-size: 5rem;
+    height: 100px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    padding-top: 20px;
+}
+.wildcherry >h1:hover{
+    text-shadow: 10px 5px 3px #0d00ff;
+    animation: dance 0.6s  linear infinite;
+}
+@keyframes dance {
+    0%{
+        transform: translate(0.9rem);
+        /* filter: blur(2px); */
+    }
+    25%{
+        transform: translate(1.3rem);
+    }
+    50%{
+        transform: translate(1.3rem, 0.9rem);
+        transform: rotate(10deg);
+        
+        /* filter: blur(5px); */
+    }
+    75%{
+        transform: translate(0.9rem, -1.5rem);
+        transform: rotate(-10deg);
+    }
+    100%{
+         scale: 1.1;
+        /* transform: rotate(-10deg); */
+        /* filter: blur(10px); */
+    }
+}
+.frame{
+    display: flex;
+    /* flex-direction: column; */
+
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* width: 900px; */
+    gap: 20px;
+    margin: 100px 10px;
+}
+.image{
+    width: 48%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 28px;
+    display: flex;
+}
+.image >img:hover{
+    box-shadow: #006eff 0 0 40px ;
+}
+.image >img{
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    border-radius: 34px;
+}
+.btn2{
+    width: 480px;
+    background-color: white;
+    height: 90px;
+    display: flex;
+    margin: 20px auto;
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+.btn2:hover{
+    box-shadow: 0 0 30px #00bfff;
+    /* border: #1b02fc solid 5px; */
+    color: #fcfcfc;
+    background: linear-gradient(90deg,#0020c1, #01156f, #00051c ) ;
+    border-radius: 3px;
+    text-shadow: 0 0 30px #00fbff;
+    transform: translateY(1rem);
+}
