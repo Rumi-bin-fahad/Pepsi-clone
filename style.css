@@ -38,7 +38,7 @@ nav:hover{
 }
 .logo:hover{
     height: 70px;
-    animation: scale 1.5s infinite;
+    animation: scale 0.9s infinite;
     border-radius: 50%;
     box-shadow: 0 0 20px #008cff;
 }
@@ -164,6 +164,7 @@ video{
     50%{
         transform: translate(1.3rem, 0.9rem);
         transform: rotate(10deg);
+        filter: grayscale(100);
         
         /* filter: blur(5px); */
     }
@@ -223,4 +224,118 @@ video{
     border-radius: 3px;
     text-shadow: 0 0 30px #00fbff;
     transform: translateY(1rem);
+}
+.video2{
+    width: 100%;
+}
+.video2 >video{
+    width: 100%;
+}
+.content{
+    background: black;
+    padding: 20px;
+    /* width: 100%; */
+    height: 350px;
+}
+.content >h1{
+    color: #0d00ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    /* text-shadow: 0 0 10px rgb(255, 255, 255); */
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+}
+.content >h1:hover{
+    color: white;
+    text-shadow: 1px 3px 1px #0d00ff;
+}
+.content1{
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    /* width: 1080px; */
+    margin: 0 auto;
+    /* flex-wrap: wra; */
+    /* overflow: hidden; */
+    /* border: 4px solid #0d00ff; */
+    justify-content: center;
+}
+.content1 >span >img{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.content1 >span{
+    width:180px ;
+    overflow: hidden;
+    border: 4px solid #0d00ff;
+}
+.content1 >span{
+    width:180px ;
+}
+.content1 >span >img:hover{
+    scale: 1.1;
+    transform: rotate(7deg);
+    opacity: 0.6;
+}
+footer{
+    display: flex;
+    /* justify-content: span; */
+    background-color: #0025ff;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    height: 350px;
+}
+footer:hover{
+    background: linear-gradient(90deg,#0020c1, #01156f, #00051c ) ;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+.footer_logo{
+    margin: 20px;
+    margin-left: 50px ;
+}
+.footer_logo >img{
+    width: 100px;
+}
+.footer_logo:hover{
+    /* height: 70px; */
+    animation: scale 1s infinite;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #0f018b;
+}
+.footer_text{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_text >p{
+    margin-right: 20px ;
+    font-size: 1.1rem;
+}
+.footer_text >p:hover{
+    /* color: #00ffe5; */
+    text-shadow: 3px 5px 1px #02036f;
+    opacity: 0.7;
+}
+.footer_icon >i{
+    font-size: 2rem;
+    margin: 10px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+}
+.footer_icon >i:hover{
+    transform: translateY(-0.5rem);
+    color: #00c3ff;
+    text-shadow: 3px 5px 1px #02036f;
+    /* text-shadow: 0 0 20px #02036f; */
 }
